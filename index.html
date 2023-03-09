@@ -199,21 +199,19 @@
             </div><!--column left-->
             <div class="column rigth">
                 <div class="text">Mensagem</div>
-                <form action="#">
+                <form action="http://apicontact.rf.gd/index.php" method="GET">
                     <div class="fields">
                         <div class="field name">
-                            <input type="text" placeholder="Nome" required>
+                            <input type="text" name="nome" placeholder="Nome" required>
                         </div>
-                        <div class="field email">
-                            <input type="email" placeholder="Email" required>
-                        </div>
+                        
                     </div>
                     <div class="field">
                         <div class="field">
-                            <input type="text" placeholder="Sobrenome" required>
+                            <input type="email" name="email" placeholder="Email" required>
                         </div>
                         <div class="field textarea">
-                           <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                           <textarea  cols="30" rows="10" name="msg" placeholder="Escrever...." required></textarea>
                         </div>
                         <div class="button">
                             <button type="submit">Enviar</button>
